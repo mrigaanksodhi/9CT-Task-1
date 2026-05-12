@@ -1,3 +1,3 @@
 import pandas as pd
-def display_dataset_preview():
-    
+dataset_df = pd.read_csv('Data/breakfast.csv')
+print(dataset_df)
