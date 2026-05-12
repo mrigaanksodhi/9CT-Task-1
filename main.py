@@ -1,58 +1,48 @@
-from data_module import(
+from data_module import (
     display_dataset_preview,
     display_single_country_averages,
     display_all_country_inflation,
-   
 )
 
-
+countries = [
+    "Australia", "Brazil", "Canada", "China", "France",
+    "Germany", "India", "Italy", "Japan", "Mexico",
+    "Netherlands", "New Zealand", "Norway", "Singapore",
+    "South Africa", "South Korea", "Spain", "Sweden",
+    "United Kingdom", "United States"
+]
 
 
 def main_menu():
     while True:
-        print("\n----Data Viewer Interface -----")
-        print('1. View dataset')
-        print("2. View Single country inflation")
-        print('3. View all country inflation prices for breakfast basket')
-        print('4. View ')
-        print('5. Exit')
+        print("\n------ Data Viewer Interface ------")
+        print("1. View full dataset")
+        print("2. View single country average price")
+        print("3. View all country breakfast basket average prices")
+        print("4. Exit")
 
-        choice = input("Select an option between 1-5").strip()
+        choice = input("\nSelect an option (1-5): ")
 
-        if choice =='1':
-            print('display_dataset_preview')
+        if choice == '1':
+            display_dataset_preview()
+
         elif choice == '2':
-            print('\n Which country would you like to select:')
-            print('1. Australia')
-            print('2. Brazil')
-            print("3. Canada")
-            print('4. China')
-            print('5. France')
-            print('6. Germany')
-            print('7. India')
-            print('8. Italy')
-            print('9. Japan')
-            print('10. Mexico')
-            print('11. Netherlands')
-            print('12. New Zealand')
-            print('13. Norway')
-            print('14. Singapore')
-            print('15. South Africa')
-            print('16. South Korea')
-            print('17. Spain')
-            print('18. Sweden')
-            print('19. United Kingdom')
-            print('20. United States of America')
+            print("\nCountries:")
+            for country in countries:
+                print(country)
+            selected = input("\nType country name: ")
+            display_single_country_averages(selected)
 
         elif choice == '3':
-            print('display_all_country_inflation')
+            display_all_country_inflation()
+
         elif choice == '4':
-            print('')
-        elif choice == '5':
-            print('Exiting Program')
+            print("Exiting program.")
             break
+
         else:
-            print('Invalid selection. Please choose a section between 1 and 5')
+            print("Invalid selection. Please choose between 1 and 4.")
+
 
 if __name__ == "__main__":
     main_menu()
