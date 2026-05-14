@@ -32,14 +32,23 @@ def plot_country_items(country_name):
     plt.ylabel("Price (USD)")
     plt.show()
 
-def plot_all_country_basketprices(dataset_df):
-    dataset_df.plot(
-                    kind = 'bar',
-                    x = 'Country',
-                    y = 'Breakfast_Basket_USD',
-                    color = 'blue',
-                    title = 'Prices of a Breakfast basket overtime'
-    )
 
-    plt.ylabel("Price (USD)")
+def plot_all_country_basketprices():
+    average_prices = []
+    country_names = []
+ 
+    for country in dataset_df['Country'].unique():
+        country_df = dataset_df[dataset_df['Country'] == country]
+        avg = country_df['Breakfast_Basket_USD'].mean()
+        average_prices.append(avg)
+        country_names.append(country)
+ 
+    plt.bar(country_names, average_prices, color='blue')
+    plt.title('Average Breakfast Basket Price - All Countries')
+    plt.xlabel('Country')
+    plt.ylabel('Price (USD)')
     plt.show()
+
+def select_single_item(food_name):
+    for country in dataset_df['Country'].unique
+        country_df = dataset_df

@@ -1,9 +1,7 @@
-import pandas as pd
-dataset_df = pd.read_csv('Data/breakfast.csv')
-
-
-def display_dataset_preview():
-    print("\n========== FULL DATASET ==========\n")
-    print(dataset_df)
-
-def display_single_country_averages(country_name):
+   select_single_item,
+           elif choice == '5':
+            print("Select from these Foods:")
+            for food in foods:
+                print(food)
+            selected_food = input("\nType food name: ")
+            select_single_item(selected_food)
