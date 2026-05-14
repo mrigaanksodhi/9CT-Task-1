@@ -14,7 +14,6 @@ def display_dataset():
  
  
 def plot_country_items(country_name):
-    # Filter the dataframe to only rows matching the country
     country_df = dataset_df[dataset_df['Country'] == country_name]
  
     if country_df.empty:
@@ -29,6 +28,18 @@ def plot_country_items(country_name):
            'Tomatoes (1kg) USD', 'Chicken (1kg) USD'],
         title='Item Prices Over Time -' + country_name
     )
- 
+
+    plt.ylabel("Price (USD)")
+    plt.show()
+
+def plot_all_country_basketprices(dataset_df):
+    dataset_df.plot(
+                    kind = 'bar',
+                    x = 'Country',
+                    y = 'Breakfast_Basket_USD',
+                    color = 'blue',
+                    title = 'Prices of a Breakfast basket overtime'
+    )
+
     plt.ylabel("Price (USD)")
     plt.show()

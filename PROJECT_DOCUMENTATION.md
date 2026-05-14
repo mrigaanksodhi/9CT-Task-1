@@ -57,3 +57,7 @@ User has viewed and/or interacted with the data.
 Any valid updates are saved by the system.
 
 Data remains available for further queries or analysis.
+
+additional stuff -
+        elif choice == '4':
+            plot_all_country_basket_prices()
