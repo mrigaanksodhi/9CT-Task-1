@@ -3,9 +3,14 @@ from data_module import (
     display_dataset,
     plot_country_items,
     plot_all_country_basketprices,
- 
+    select_single_food,
 )
- 
+import time
+def typewrite(text):
+    for char in text:
+        print(char, end='', flush=True)
+        time.sleep(0.025)
+    print()
 countries = [
     "Australia", "Brazil", "Canada", "China", "France",
     "Germany", "India", "Italy", "Japan", "Mexico",
@@ -23,16 +28,16 @@ foods = [
  
 def main_menu():
     while True:
-        print(" ═════════════════════════════════════════════════")
-        print("║ Data Viewer Interface - Breakfast foods tracker ║")
-        print("║═════════════════════════════════════════════════║")
-        print("║  1. View hypothesis                             ║")
-        print("║  2. View full dataset                           ║")
-        print("║  3. View item prices for each country           ║")
-        print("║  4. View all country prices for breakfast basket║")
-        print("║  5. Select single food for all countries        ║")
-        print("║  6. Exit                                        ║")
-        print(" ═════════════════════════════════════════════════")
+        typewrite(" ══════════════════════════════════════════════════")
+        typewrite("║ Data Viewer Interface - Breakfast foods tracker  ║")
+        typewrite("║══════════════════════════════════════════════════║")
+        typewrite("║  1. View hypothesis                              ║")
+        typewrite("║  2. View full dataset                            ║")
+        typewrite("║  3. View item prices for each country            ║")
+        typewrite("║  4. View all country prices for breakfast basket ║")
+        typewrite("║  5. Select single food for all countries         ║")
+        typewrite("║  6. Exit                                         ║")
+        typewrite(" ══════════════════════════════════════════════════")
  
         choice = input("\nSelect an option (1-6): ")
  
@@ -52,12 +57,17 @@ def main_menu():
         elif choice == '4':
             plot_all_country_basketprices()
  
-
- 
+        elif choice == '5':
+            print('Select from these Foods:')
+            for food in foods:
+                print(food)
+            selectedfood = input('\nType food name: ')
+            select_single_food(selectedfood)
+        
         elif choice == '6':
             print("Exiting program.")
             break
- 
+
         else:
             print("Invalid selection. Please choose between 1 and 6.")
  

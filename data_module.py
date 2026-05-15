@@ -47,8 +47,19 @@ def plot_all_country_basketprices():
     plt.title('Average Breakfast Basket Price - All Countries')
     plt.xlabel('Country')
     plt.ylabel('Price (USD)')
+    plt.xticks(rotation=60)
     plt.show()
 
-def select_single_item(food_name):
-    for country in dataset_df['Country'].unique
-        country_df = dataset_df
+def select_single_food(food_name):
+    for foods in dataset_df['Country'].unique():
+        food_df = dataset_df[dataset_df['Country'] == foods]
+    if food_df.empty:
+        print(food_name + " not found. Please make sure the spelling is exactly as given.")
+        return
+    
+    food_df.plot(
+        king = 'bar'
+        x = 'Country'
+        y = #y shld be the food item they have chose future me 
+        )
+    
