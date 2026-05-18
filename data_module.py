@@ -17,7 +17,7 @@ def plot_country_items(country_name):
     country_df = dataset_df[dataset_df['Country'] == country_name]
  
     if country_df.empty:
-        print("\nCountry " + country_name + " not found. Please check the spelling.")
+        print("\nCountry " + country_name + " not found. Please check the spelling and capitals.")
         return
  
     country_df.plot(

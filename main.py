@@ -42,7 +42,7 @@ def main_menu():
         typewrite("║  7. Exit                                         ║")
         typewrite(" ══════════════════════════════════════════════════")
  
-        choice = input("\nSelect an option (1-6): ")
+        choice = input("\nSelect an option (1-7): ")
  
         if choice == '1':
             display_hypothesis()
@@ -74,7 +74,7 @@ def main_menu():
             print("Exiting program.")
             break
         else:
-            print("Invalid selection. Please choose between 1 and 6.")
+            print("Invalid selection. Please choose between 1 and 7.")
  
  
 if __name__ == "__main__":

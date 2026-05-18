@@ -47,7 +47,10 @@ Displays a bar graph comparing the average breakfast basket price across all 20 
 ### Option 5 - Select single food for all countries
 Asks you to type a food item from the list provided, then displays a line graph showing the price of that food item across all 20 countries over the 6 months.
 
-### Option 6 - Exit
+### Option 6 - 
+Displays the countries with the highest and lowest average USD prices for breakfast basket. 
+
+### Option 7 - Exit
 Exits the program, ending the loop.
 
 ## Countries Available

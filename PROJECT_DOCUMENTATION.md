@@ -113,3 +113,12 @@ The evidence suggests that Australian supermarkets have been raising prices beyo
 - **Total columns:** 12
 - **Source:** Secondary research dataset
 - **Currency:** All prices are recorded in US dollars (USD) to allow fair international comparison
+
+# Phase 4: Testing and Evaluating
+## Analyse and Conclude
+
+## Analysis Test
+
+## Peer Verification
+
+## Project Evaluation
