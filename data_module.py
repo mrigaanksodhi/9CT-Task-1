@@ -51,15 +51,14 @@ def plot_all_country_basketprices():
     plt.show()
 
 def select_single_food(food_name):
-    for foods in dataset_df['Country'].unique():
-        food_df = dataset_df[dataset_df['Country'] == foods]
-    if food_df.empty:
-        print(food_name + " not found. Please make sure the spelling is exactly as given.")
-        return
-    
-    food_df.plot(
-        king = 'bar'
-        x = 'Country'
-        y = #y shld be the food item they have chose future me 
-        )
+    # Plot the selected food item for all countries
+    for country in dataset_df['Country'].unique():
+        country_df = dataset_df[dataset_df['Country'] == country]
+        plt.plot(country_df['Month'], country_df[food_name], label=country)
+ 
+    plt.title('Price of ' + food_name + ' - All Countries')
+    plt.xlabel('Month')
+    plt.ylabel('Price (USD)')
+    plt.legend()
+    plt.show()
     
