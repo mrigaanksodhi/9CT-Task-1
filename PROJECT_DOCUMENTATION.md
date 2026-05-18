@@ -106,25 +106,6 @@ The evidence suggests that Australian supermarkets have been raising prices beyo
 - Under Australian law, businesses are legally allowed to set their own prices — raising prices is not inherently illegal
 - Global factors such as COVID-19, climate events and international conflict have genuinely driven up food production costs worldwide
 
----
-
-## Data Dictionary
-
-| Column Name | Data Type | Description | Example |
-|---|---|---|---|
-| Country | String (Text) | The name of the country where prices were recorded | Australia |
-| ISO_Country_Code | String (Text) | The 3-letter international country code | AUS |
-| Month | String (Text) | The month the prices were recorded in YYYY-MM format | 2025-10 |
-| Breakfast_Basket_USD | Float (Decimal) | The total cost of the full breakfast basket in US dollars | 12.37 |
-| Milk (1L) USD | Float (Decimal) | The price of 1 litre of milk in US dollars | 1.73 |
-| Bread (500g) USD | Float (Decimal) | The price of 500 grams of bread in US dollars | 2.75 |
-| Eggs (12) USD | Float (Decimal) | The price of a dozen eggs in US dollars | 4.83 |
-| Bananas (1kg) USD | Float (Decimal) | The price of 1 kilogram of bananas in US dollars | 3.33 |
-| Oranges (1kg) USD | Float (Decimal) | The price of 1 kilogram of oranges in US dollars | 3.05 |
-| Cheese (1kg) USD | Float (Decimal) | The price of 1 kilogram of cheese in US dollars | 9.86 |
-| Tomatoes (1kg) USD | Float (Decimal) | The price of 1 kilogram of tomatoes in US dollars | 7.38 |
-| Chicken (1kg) USD | Float (Decimal) | The price of 1 kilogram of chicken in US dollars | 9.35 |
-
 ### Dataset Parameters
 - **Number of countries:** 20
 - **Number of months:** 6 (October 2025 to March 2026)

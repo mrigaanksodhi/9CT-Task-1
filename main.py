@@ -4,6 +4,8 @@ from data_module import (
     plot_country_items,
     plot_all_country_basketprices,
     select_single_food,
+    highest_lowest_countries,
+
 )
 import time
 def typewrite(text):
@@ -36,7 +38,8 @@ def main_menu():
         typewrite("║  3. View item prices for each country            ║")
         typewrite("║  4. View all country prices for breakfast basket ║")
         typewrite("║  5. Select single food for all countries         ║")
-        typewrite("║  6. Exit                                         ║")
+        typewrite("║  6. View Highest and Lowest Prices               ║")
+        typewrite("║  7. Exit                                         ║")
         typewrite(" ══════════════════════════════════════════════════")
  
         choice = input("\nSelect an option (1-6): ")
@@ -65,9 +68,11 @@ def main_menu():
             select_single_food(selectedfood)
         
         elif choice == '6':
+            highest_lowest_countries()
+
+        elif choice == '7':
             print("Exiting program.")
             break
-
         else:
             print("Invalid selection. Please choose between 1 and 6.")
  

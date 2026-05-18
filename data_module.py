@@ -62,3 +62,38 @@ def select_single_food(food_name):
     plt.legend()
     plt.show()
     
+def highest_lowest_countries():
+
+    average_prices = {}
+
+    for country in dataset_df['Country'].unique():
+
+        country_df = dataset_df[dataset_df['Country'] == country]
+
+        average = country_df['Breakfast_Basket_USD'].mean()
+
+        average_prices[country] = average
+
+    highest_country = ""
+    lowest_country = ""
+
+    highest_price = 0
+    lowest_price = 999999
+
+    for country in average_prices:
+
+        if average_prices[country] > highest_price:
+            highest_price = average_prices[country]
+            highest_country = country
+
+        if average_prices[country] < lowest_price:
+            lowest_price = average_prices[country]
+            lowest_country = country
+
+    print("\n========== PRICE ANALYSIS ==========\n")
+
+    print("Highest Average Basket Price:")
+    print(highest_country, "-", round(highest_price, 2), "USD")
+
+    print("\nLowest Average Basket Price:")
+    print(lowest_country, "-", round(lowest_price, 2), "USD")
