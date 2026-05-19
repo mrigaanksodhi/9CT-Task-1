@@ -56,7 +56,8 @@ Exits the program, ending the loop.
 ## Countries Available
 These are the countries that are displayed in the dataset and can be chosen in Option 3: Australia, Brazil, Canada, China, France, Germany, India, Italy, Japan, Mexico, Netherlands, New Zealand, Norway, Singapore, South Africa, South Korea, Spain, Sweden, United Kingdom, United States
 
-## Food Items Available
+## Food Items Available 
+These are the food items that can be chosen in Option 5: 
 Milk (1L) USD
 Bread (500g) USD
 Eggs (12) USD
