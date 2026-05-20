@@ -5,7 +5,7 @@ dataset_df = pd.read_csv('Data/breakfast.csv')
 
 def display_hypothesis():
     print("\n========== HYPOTHESIS ==========\n")
-    print("Supermarkets in World Wide are taking advantage of inflation to overcharge on necessary goods, " \
+    print("Supermarkets World Wide are taking advantage of inflation to overcharge on necessary goods, " \
     "primarily to cover rising costs for labor, energy, and supply chains. ")
 
 

@@ -1,7 +1,7 @@
 # Breakfast Basket Price Tracker
 
 ## Overview
-This project helps to analyse the cost of breakfast food items across 20 countries from October 2025 to March 2026. It investigates whether supermarkets in World Wide are taking advantage of inflation to overcharge on necessary goods.
+This project helps to analyse the cost of breakfast food items across 20 countries from October 2025 to March 2026. It investigates whether supermarkets World Wide are taking advantage of inflation to overcharge on necessary goods.
 
 ## Files
 
@@ -29,7 +29,8 @@ Data Viewer Interface - Breakfast foods tracker
 3. View item prices for each country            
 4. View all country prices for breakfast basket
 5. Select single food for all countries        
-6. Exit                                        
+6. View Highest and Lowest Prices  
+7. Exit                                        
 
 
 ### Option 1 - View hypothesis
@@ -47,7 +48,7 @@ Displays a bar graph comparing the average breakfast basket price across all 20 
 ### Option 5 - Select single food for all countries
 Asks you to type a food item from the list provided, then displays a line graph showing the price of that food item across all 20 countries over the 6 months.
 
-### Option 6 - 
+### Option 6 - View what country has the highest and lowest breakfast basket price
 Displays the countries with the highest and lowest average USD prices for breakfast basket. 
 
 ### Option 7 - Exit

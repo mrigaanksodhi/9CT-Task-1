@@ -13,6 +13,7 @@ def typewrite(text):
         print(char, end='', flush=True)
         time.sleep(0.015)
     print()
+
 countries = [
     "Australia", "Brazil", "Canada", "China", "France",
     "Germany", "India", "Italy", "Japan", "Mexico",
@@ -75,7 +76,7 @@ def main_menu():
             break
         else:
             print("Invalid selection. Please choose between 1 and 7.")
- 
+
  
 if __name__ == "__main__":
     main_menu()
