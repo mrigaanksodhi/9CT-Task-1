@@ -59,12 +59,13 @@
 2. User selects one of the following options:
    - a. View hypothesis 
    - b. View full dataset 
-   - c. View item prices for a country 
+   - c. Select and view item prices for a country 
    - d. View all country basket prices 
    - e. Select single food for all countries
+   - f. View highest and lowest basket prices
 3. System performs the action and outputs the result to the user
 4. User is returned to the main menu after each action
-5. User selects option 6 to exit the program
+5. User selects option 7 to exit the program
 
 **Postconditions:**
 - User has viewed/interacted with the breakfast price data
