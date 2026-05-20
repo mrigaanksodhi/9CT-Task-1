@@ -11,7 +11,7 @@ import time
 def typewrite(text):
     for char in text:
         print(char, end='', flush=True)
-        time.sleep(0.025)
+        time.sleep(0.015)
     print()
 countries = [
     "Australia", "Brazil", "Canada", "China", "France",
