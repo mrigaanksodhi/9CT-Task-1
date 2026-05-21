@@ -2,7 +2,7 @@
 # Phase 1: Identifying and Defining
 ## Requirements Outline
 ### Mind Map -
-![‘Mind Map’](Images/MindMap.png)
+![‘Mind Map’](Images/MindMapv2.png)
 ### Functional Requirements
 #### Data Loading
 - The system must be able to load the CSV file (breakfast.csv) using Pandas
