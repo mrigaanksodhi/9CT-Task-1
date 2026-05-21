@@ -53,7 +53,7 @@ def main_menu():
             print('Select from these Foods:')
             for food in foods:
                 print(food)
-            selectedfood = input('Type food name (Copy and Pasting the food exactly as it is, is recommended): ')
+            selectedfood = input('Type food name: ')
             select_single_food(selectedfood)
         
         elif choice == '6':

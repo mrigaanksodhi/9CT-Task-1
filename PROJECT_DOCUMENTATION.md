@@ -112,7 +112,7 @@ Based on the following findings, it is clear that not just Australian supermarke
 - **Source:** Secondary research dataset found on Kaggle.com
 - **Currency:** All prices are recorded in US dollars (USD) for fair comparison
 
-
+### Data Dictionary
 | Field                | Datatype | Format for Display | Description                                                                       | Example       | Validation                                                    |
 |----------------------|----------|--------------------|-----------------------------------------------------------------------------------|---------------|---------------------------------------------------------------|
 | Country              | string   | XX..XX             | Name of the country where the breakfast item/basket is available                  | United States | Can be any amount of letters but must not be numbers          |
@@ -131,8 +131,8 @@ Based on the following findings, it is clear that not just Australian supermarke
 # Phase 4: Testing and Evaluating
 ## Analyse and Conclude
 ### SEEI Paragraph
-**Statement:**The data shows that breakfast basket prices have risen across most countries in the dataset over the 6 month period. This supports the idea that supermarkets worldwide are taking advantage of inflation to overcharge on necessary goods, primarily to cover rising costs for labour, energy, and supply chains. (Hypothesis)
-**Explaination:**
+**Statement:** The data shows that breakfast basket prices have risen across most countries in the dataset over the 6 month period. This supports the idea that supermarkets worldwide are taking advantage of inflation to overcharge on necessary goods, primarily to cover rising costs for labour, energy, and supply chains. (Hypothesis)
+**Explanation:**
 The dataset tracks the price of 8 breakfast items across 20 countries from October 2025 to March 2026. Looking at the global average, nearly every country in the dataset saw a rise in their breakfast basket price over the 6 months. Countries like Canada ($19.91), Norway ($16.06) and the United States ($15.30) sit at the top of the price range, while India ($3.05) and Brazil ($6.74) sit at the bottom. The significant gap between the most and least expensive countries suggests that factors beyond just supply chain costs are influencing prices.
 **Example:**
 For example, Australia's breakfast basket price rose from $12.37 in October 2025 to $12.75 in March 2026, a rise of $0.38 over 6 months. Eggs in Australia rose from $4.83 to $5.04 over the same period. Similarly, the United States saw its basket rise from $15.02 to $15.49. These trends across multiple countries suggest that price increases are not isolated to one region but are a worldwide pattern, consistent with the hypothesis.
