@@ -1,6 +1,9 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 dataset_df = pd.read_csv('Data/breakfast.csv')
+pd.set_option('display.max_rows', None)     
+pd.set_option('display.max_columns', None)   
+pd.set_option('display.max_colwidth', None)  
 
 
 def display_hypothesis():
@@ -52,7 +55,6 @@ def plot_all_country_basketprices():
     plt.show()
 
 def select_single_food(food_name):
-    # Plot the selected food item for all countries
     for country in dataset_df['Country'].unique():
         country_df = dataset_df[dataset_df['Country'] == country]
         plt.plot(country_df['Month'], country_df[food_name], label=country)

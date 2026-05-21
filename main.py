@@ -55,7 +55,7 @@ def main_menu():
             print("Select from these Countries:")
             for country in countries:
                 print(country)
-            selectedcountry = input("\nType country name: ")
+            selectedcountry = input("Type country name: ")
             plot_country_items(selectedcountry)
  
         elif choice == '4':
@@ -65,7 +65,7 @@ def main_menu():
             print('Select from these Foods:')
             for food in foods:
                 print(food)
-            selectedfood = input('\nType food name: ')
+            selectedfood = input('Type food name (Copy and Pasting the food exactly as it is, is recommended): ')
             select_single_food(selectedfood)
         
         elif choice == '6':
