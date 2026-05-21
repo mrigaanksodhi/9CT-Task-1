@@ -5,7 +5,8 @@ from data_module import (
     plot_all_country_basketprices,
     select_single_food,
     highest_lowest_countries,
-
+    countries,
+    foods
 )
 import time
 def typewrite(text):
@@ -14,20 +15,7 @@ def typewrite(text):
         time.sleep(0.015)
     print()
 
-countries = [
-    "Australia", "Brazil", "Canada", "China", "France",
-    "Germany", "India", "Italy", "Japan", "Mexico",
-    "Netherlands", "New Zealand", "Norway", "Singapore",
-    "South Africa", "South Korea", "Spain", "Sweden",
-    "United Kingdom", "United States"
-]
- 
-foods = [
-    'Milk (1L) USD', 'Bread (500g) USD', 'Eggs (12) USD',
-    'Bananas (1kg) USD', 'Oranges (1kg) USD',
-    'Cheese (1kg) USD', 'Tomatoes (1kg) USD', 'Chicken (1kg) USD'
-]
- 
+
  
 def main_menu():
     while True:

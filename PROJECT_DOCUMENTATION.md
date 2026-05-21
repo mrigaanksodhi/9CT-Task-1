@@ -109,7 +109,7 @@ Based on the following findings, it is clear that not just Australian supermarke
 - **Number of months:** 6 (October 2025 to March 2026)
 - **Total rows:** 120 (20 countries x 6 months)
 - **Total columns:** 12
-- **Source:** Secondary research dataset
+- **Source:** Secondary research dataset found on Kaggle.com
 - **Currency:** All prices are recorded in US dollars (USD) for fair comparison
 
 
@@ -143,5 +143,24 @@ Overall, while rising labour, energy and supply chain costs are real pressures, 
 While the dataset shows clear increases in breakfast basket prices, the project only analyses a six-month period and does not directly compare supermarket profits or inflation rates in each country. Some other factors such as currency exchange rates and supply shortages could also contribute to rising prices. Overall, I think that further research over a longer period of time (longer than the 6 months) would heavily improve the reliability of the findings.
 
 ## Peer Verification
+| Person Giving Feedback | Plus                                                                                                                                                               | Minus                                                                               | Implication                                                                                                                                                                                                                     |   |
+|------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
+| Zachary T              | Clean User-Interface, with all working functions                                                                                                                   | The user interface is very specific                                                 | In the future to make the user-interface more user friendly                                                                                                                                                                     |   |
+| Kevin Z                | All Functions work smoothly and info is very interesting                                                                                                           | In the charts some of the countries have the same colour                            | In the future use contrasting colours instead of similar ones                                                                                                                                                                   |   |
+| Alfonso D              | User interface is clean and easy to read. The graphs display information well and clearly. Lots of data allows the viewer to fully understand the extent of topic. | Add loops in some areas, so the code doesn't break if user adds and improprer value | In the future make the interface more user friendly like seperating the countries into continents so the user doesn't feel overwhelmed. Apart from that the interface is good, allowing the user to understand the data easily. |   |
+
+**Summary** In summary, the feedback showed that while the program was functional and clean, there was still room for improvement. These could have been made by using contrasting colours on the graphs, adding better error handling for improper inputs, and making the interface less overwhelming by grouping countries into continents.
 
 ## Project Evaluation
+### Evaluate Requirements Outline
+Overall the system met all of the functional and non-functional requirements outlined in Phase 1. All 7 menu options work correctly. The graphs display with titles and axis labels and the README explains how to use the program. 
+
+### Evaluate Peer Feedback
+The peer feedback recieved from Zachary, Alfonso and Kevin was mostly positive but also highlighted some issues with the program and user-interface. By making the program more user friendly and easier to understand by using contrasting colours, the graphs could have been easier to interpret.
+
+### Evaluate Project Management
+The project was completed across all four phases in order and was done gradually during the 4-5 weeks given. Doing the hypothesis early gave the project clear direction and made it easier to choose a relevant dataset. If more time was available, the program could include a country comparison feature. 
+
+
+### Final Conclusion
+This project set out to investigate whether supermarkets worldwide are overcharging consumers on necessary goods under the cover of inflation. After analysing breakfast basket prices across 20 countries from October 2025 to March 2026, it is clear that prices have rose consistently across nearly every country in the dataset. While this trend aligns with the hypothesis, it is important to note that rising prices do not necessarily mean deliberate overcharging, genuine cost pressures such as energy, labour and supply chain expenses could also be responsible. The dataset used is recent and covers a broad range of countries and remains unmodified, making it reliable for this analysis. In conclusion, the hypothesis is partially supported by the data, however further research into supermarket profit margins worldwide would be required to draw a definitive conclusion.

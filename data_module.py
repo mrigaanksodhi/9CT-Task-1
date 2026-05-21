@@ -4,26 +4,42 @@ dataset_df = pd.read_csv('Data/breakfast.csv')
 pd.set_option('display.max_rows', None)     
 pd.set_option('display.max_columns', None)   
 pd.set_option('display.max_colwidth', None)  
-
+countries = [
+    "Australia", "Brazil", "Canada", "China", "France",
+    "Germany", "India", "Italy", "Japan", "Mexico",
+    "Netherlands", "New Zealand", "Norway", "Singapore",
+    "South Africa", "South Korea", "Spain", "Sweden",
+    "United Kingdom", "United States"
+]
+ 
+foods = [
+    'Milk (1L) USD', 'Bread (500g) USD', 'Eggs (12) USD',
+    'Bananas (1kg) USD', 'Oranges (1kg) USD',
+    'Cheese (1kg) USD', 'Tomatoes (1kg) USD', 'Chicken (1kg) USD'
+]
+ 
 
 def display_hypothesis():
-    print("\n========== HYPOTHESIS ==========\n")
-    print("Supermarkets World Wide are taking advantage of inflation to overcharge on necessary goods, " \
-    "primarily to cover rising costs for labor, energy, and supply chains. ")
+    print("========== HYPOTHESIS ==========")
+    print("Supermarkets worldwide are taking advantage of inflation to overcharge on necessary goods, primarily to cover rising costs for labor, energy, and supply chains. ")
 
 
 def display_dataset():
-    print("\n========== FULL DATASET ==========\n")
+    print("========== FULL DATASET ==========")
     print(dataset_df)
  
  
-def plot_country_items(country_name):
-    country_df = dataset_df[dataset_df['Country'] == country_name]
- 
-    if country_df.empty:
-        print("\nCountry " + country_name + " not found. Please check the spelling and capitals.")
+def plot_country_items(country_input):
+    country_name = None
+    for country in countries:
+        if country.lower() == country_input.lower():
+            country_name = country
+
+    if country_name is None:
+        print("Country " + country_input + " not found. Please check the spelling.")
         return
- 
+
+    country_df = dataset_df[dataset_df['Country'] == country_name]
     country_df.plot(
         kind='line',
         x='Month',
@@ -54,12 +70,21 @@ def plot_all_country_basketprices():
     plt.xticks(rotation=60)
     plt.show()
 
-def select_single_food(food_name):
+def select_single_food(food_input):
+    matched_food = None
+    for food in foods:
+        if food_input.lower() in food.lower():
+            matched_food = food
+
+    if matched_food is None:
+        print("Food item " + food_input + " not found. Please check the spelling.")
+        return
+
     for country in dataset_df['Country'].unique():
         country_df = dataset_df[dataset_df['Country'] == country]
-        plt.plot(country_df['Month'], country_df[food_name], label=country)
- 
-    plt.title('Price of ' + food_name + ' - All Countries')
+        plt.plot(country_df['Month'], country_df[matched_food], label=country)
+
+    plt.title('Price of ' + matched_food + ' - All Countries')
     plt.xlabel('Month')
     plt.ylabel('Price (USD)')
     plt.legend()
@@ -93,10 +118,10 @@ def highest_lowest_countries():
             lowest_price = average_prices[country]
             lowest_country = country
 
-    print("\n========== PRICE ANALYSIS ==========\n")
+    print("========== PRICE ANALYSIS ==========")
 
     print("Highest Average Basket Price:")
     print(highest_country, "-", round(highest_price, 2), "USD")
 
-    print("\nLowest Average Basket Price:")
+    print("Lowest Average Basket Price:")
     print(lowest_country, "-", round(lowest_price, 2), "USD")
